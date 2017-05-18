@@ -20,9 +20,8 @@ def tri_bulle(tableau):
     for i in range(n-1, -1, -1):
         for j in range(i):
             if tableau[j] > tableau[j + 1]:
-                temp = tableau[j]
-                tableau[j] = tableau[j + 1]
-                tableau[j + 1] = temp
+                tableau[j] , tableau[j + 1]  = tableau[j+1] , tableau[j]
+                
 
 
 def tri_insertion(tableau):
